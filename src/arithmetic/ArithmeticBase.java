@@ -20,12 +20,13 @@ public class ArithmeticBase
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();
+        public enum Operation {PLUS,MINUS,TIMES,DIVIDE};
+        Operation s= sc.next();
         switch (s.toUpperCase()) 
         {
             case "PLUS":
                 return x + y;
-            case "MINUS":
+            case "MINUS":s
                 return x - y;
             case "TIMES":
                 return x * y;
